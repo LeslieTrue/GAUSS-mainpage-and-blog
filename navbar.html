@@ -1,108 +1,22 @@
-<!-- After </style></head><body> -->
-<!-- Navigation Bar -->
+<!-- Navigation Bar Component -->
 <nav class="navbar">
-	<div class="nav-container">
-	  <!-- 左侧 Logo + 链接 -->
-	  <div class="nav-left">
-		<!-- Logo 链接 -->
-		<a href="index.html" class="nav-logo">
-		  <img src="gauss_logo.png" alt="GAUSS Logo" class="logo-img">
-		</a>
-		<ul class="nav-links">
-		  <li><a href="index.html">Home</a></li>
-		  <li><a href="blog.html">Blog</a></li>
-		  <li><a href="submission.html">Problem Submission</a></li>
-		  <li><a href="https://huggingface.co/datasets/GaussMath/GAUSS">Dataset</a></li>
-		  <li><a href="https://arxiv.org/abs/2509.18122">arXiv</a></li>
-		  <li><a href="https://drive.google.com/file/d/1ka15SjUl2FhzQMPOv4GQyyu5rb0tVAJT/view?usp=sharing">PDF</a></li>
-		</ul>
-	  </div>
-	</div>
-  </nav>
-  
-  <style>
-  /* --- Navigation Bar --- */
-  .navbar {
-	background: rgba(255, 255, 255, 0.95);
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	z-index: 1000;
-	border-bottom: 1px solid #eee;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	box-shadow: 0 2px 6px rgba(0,0,0,0.06);
-	height: 3.5em;
-	display: flex;
-	align-items: center;
-	backdrop-filter: blur(10px); /* 毛玻璃效果 */
-  }
-  
-  .nav-container {
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 0 1em;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 100%;
-  }
-  
-  /* 左侧区域 */
-  .nav-left {
-	display: flex;
-	align-items: center;
-	gap: 1.5em;
-  }
-  
-  /* Logo 图片 */
-  .nav-logo {
-	display: flex;
-	align-items: center;
-	text-decoration: none;
-  }
-  
-  .logo-img {
-	height: 26px;   /* 控制 Logo 高度 */
-	width: auto;
-	display: block;
-  }
-  
-  /* 链接组 */
-  .nav-links {
-	list-style: none;
-	display: flex;
-	gap: 0.6em;
-	margin: 0;
-	padding: 0;
-  }
-  .nav-links li { list-style: none; }
-  
-  .nav-links li a {
-	padding: 0.4em 1.2em;
-	border-radius: 6px;
-	text-decoration: none;
-	font-size: 1.1rem;
-	font-weight: 600;
-	color: #333;
-	transition: all 0.25s ease;
-  }
-  
-  .nav-links li a:hover,
-  .nav-links li a.active {
-	background: #0066cc;
-	color: #fff;
-  }
-  
-  .page-title {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-top: 0.5em;  /* 在标题前留出空行 */
-  margin-bottom: 0.75em;
-}
-  
-  /* 页面封面图与导航栏间距 */
-  .page-cover-image {
-	margin-top: -5.5em;
-  }
-  </style>
+  <div class="nav-container">
+    <!-- 左侧 Logo + 链接 -->
+    <div class="nav-left">
+      <!-- Logo 链接 -->
+      <a href="{{ROOT_PATH}}index.html" class="nav-logo">
+        <img src="{{ROOT_PATH}}gauss_logo.png" alt="GAUSS Logo" class="logo-img">
+      </a>
+      <ul class="nav-links">
+        <li><a href="{{ROOT_PATH}}index.html">Home</a></li>
+        <li><a href="{{ROOT_PATH}}blogs/home/">About</a></li>
+        <li><a href="{{ROOT_PATH}}blogs/bench/">Benchmark</a></li>
+        <li><a href="{{ROOT_PATH}}blogs/eval/">Evaluation</a></li>
+        <li><a href="{{ROOT_PATH}}submission.html">Submit</a></li>
+        <li><a href="https://huggingface.co/datasets/GaussMath/GAUSS">Dataset</a></li>
+        <li><a href="https://arxiv.org/abs/2509.18122">arXiv</a></li>
+        <li><a href="https://drive.google.com/file/d/1ka15SjUl2FhzQMPOv4GQyyu5rb0tVAJT/view?usp=sharing">PDF</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
